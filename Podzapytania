@@ -1,0 +1,45 @@
+Serwer MySQL nie obsługuje instrukcji INTERSECT I
+EXCEPT. Dlatego aby otrzymać wynik zapytania na
+tym serwerze, należy użyć innych konstrukcji języka
+SQL, takich jak łączenie tabel lub podzapytania.
+
+Instrukcja UNION to instrukcja wykonywana, aby
+otrzymać sumę zbiorów 
+
+Instrukcja UNION domyślnie powoduje usunięcie
+powtarzających się wierszy. 
+
+W celu zachowania w wyniku wszystkich wierszy
+należy użyć instrukcji UNION ALL. (OR)
+
+Instrukcja INTERSECT zwraca część wspólną (AND)
+
+Instrukcja EXCEPT to instrukcja wykonywana, aby
+otrzymać różnicę zbiorów
+
+Zagnieżdżanie zapytań
+● SELECT,
+● INSERT,
+● UPDATE,	
+● DELETE.
+
+Jeżeli zapytanie wewnętrzne zwraca tylko jedną
+wartość, to w zapytaniu zewnętrznym w klauzuli
+WHERE można użyć operatorów: =, <, >, <=, >=, <>
+
+do porównania listy
+wartości należy użyć operatora IN.
+
+● IN - sprawdza, czy chociaż jedna wartość z listy spełnia
+zdefiniowany warunek. Lista wartości musi składać się z
+jednej kolumny.
+● EXISTS - sprawdza, czy w wyniku zapytania
+wewnętrznego zostały zwrócone jakiekolwiek wartości.
+● ANY/SOME - działają tak samo: sprawdzają wartość
+wybranego wiersza wyniku podzapytania.
+● ALL - sprawdza wartość wszystkich wierszy wyniku
+podzapytania.
+
+Operatory ANY lub SOME , ALL
+Zwraca prawdę, jeżeli wszystkie zwrócone wartości
+wyniku podzapytania spełniają poprzedzający je warunek.
